@@ -50,4 +50,8 @@ public class Level {
         }
         return counter;
     }
+
+    public int getSeriesAmount(){
+        return series.size();
+    }
 }
