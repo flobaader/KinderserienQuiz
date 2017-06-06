@@ -1,5 +1,8 @@
 package de.selectcode.kinderserienquiz.UI.activities;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,7 +34,7 @@ public class mainMenu extends AppCompatActivity {
         button_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                //startActivity(new Intent(, levelMenu.class));
             }
         });
 
