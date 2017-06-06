@@ -1,6 +1,7 @@
 package de.selectcode.kinderserienquiz.UI;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,9 @@ public class mainMenu extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+
     }
+
 
 }
