@@ -23,7 +23,6 @@ public class LevelRectangleView extends LinearLayout {
     public LevelRectangleView(Context context) {
         super(context);
     additionaleConstructor();
-
     }
 
 
@@ -44,6 +43,7 @@ public class LevelRectangleView extends LinearLayout {
 
     private void additionaleConstructor(){
         this.setBackgroundColor(Color.GRAY);
+        this.setOrientation(VERTICAL);
 
         //Title
         TextView t = new TextView(this.getContext());
@@ -54,10 +54,13 @@ public class LevelRectangleView extends LinearLayout {
         this.addView(t);
 
         //ProgressBar
-        ProgressBar p = new ProgressBar(this.getContext());
+        ProgressBar p = new ProgressBar(this.getContext(),
+                null,
+                android.R.attr.progressBarStyleHorizontal);
         p.setLayoutParams(new LayoutParams(
                 ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
+        p.setIndeterminate(true);
         p.setProgress(20);
 
         this.addView(p);
