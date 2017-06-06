@@ -1,4 +1,4 @@
-package de.selectcode.kinderserienquiz;
+package de.selectcode.kinderserienquiz.UI;
 
 import android.app.Activity;
 import android.support.v4.view.ViewPager;
@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.view.View;
+
+import de.selectcode.kinderserienquiz.R;
 
 import static android.app.PendingIntent.getActivity;
 

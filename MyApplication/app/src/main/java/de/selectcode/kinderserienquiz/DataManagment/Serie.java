@@ -1,20 +1,20 @@
-package de.selectcode.kinderserienquiz;
+package de.selectcode.kinderserienquiz.DataManagment;
 
 /**
  * Created by floba on 06.06.2017.
  */
 
 public class Serie {
-    private string name;
+    private String name;
     private boolean solved;
-    private string youtubeLink;
+    private String youtubeLink;
 
 
-    public string getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -26,11 +26,11 @@ public class Serie {
         this.solved = solved;
     }
 
-    public string getYoutubeLink() {
+    public String getYoutubeLink() {
         return youtubeLink;
     }
 
-    public void setYoutubeLink(string youtubeLink) {
+    public void setYoutubeLink(String youtubeLink) {
         this.youtubeLink = youtubeLink;
     }
 }
