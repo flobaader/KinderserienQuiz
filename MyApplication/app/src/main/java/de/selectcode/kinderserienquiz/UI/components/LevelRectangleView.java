@@ -1,24 +1,68 @@
 package de.selectcode.kinderserienquiz.UI.components;
 
         import android.content.Context;
-        import android.content.res.TypedArray;
-        import android.graphics.Canvas;
         import android.graphics.Color;
-        import android.graphics.Paint;
-        import android.graphics.drawable.Drawable;
-        import android.text.TextPaint;
-        import android.util.AttributeSet;
-        import android.view.View;
+        import android.os.Bundle;
+        import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+        import android.view.ViewGroup;
         import android.widget.Button;
+        import android.widget.LinearLayout;
+        import android.widget.ProgressBar;
+        import android.widget.TextView;
 
-        import de.selectcode.kinderserienquiz.R;
+        import static android.view.ViewGroup.*;
 
 /**
  * TODO: document your custom view class.
  */
-public class LevelRectangleView extends android.support.v7.widget.AppCompatButton {
+public class LevelRectangleView extends LinearLayout {
 
-    public LevelRectangleView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
+    public LevelRectangleView(Context context) {
+        super(context);
+    additionaleConstructor();
+
     }
+
+
+    public void onClick(View view){
+        Log.d("Hallo", "Test");
+    }
+
+    public LevelRectangleView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        additionaleConstructor();
+    }
+
+    public LevelRectangleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        additionaleConstructor();
+    }
+
+
+    private void additionaleConstructor(){
+        this.setBackgroundColor(Color.GRAY);
+
+        //Title
+        TextView t = new TextView(this.getContext());
+        t.setLayoutParams(new LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+        t.setText("Benjamin Blümchen");
+        this.addView(t);
+
+        //ProgressBar
+        ProgressBar p = new ProgressBar(this.getContext());
+        p.setLayoutParams(new LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT));
+        p.setProgress(20);
+
+        this.addView(p);
+
+    }
+
+
 }
