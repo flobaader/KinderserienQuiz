@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.concurrent.Callable;
+
 import de.selectcode.kinderserienquiz.DataManagment.Serie;
 
 /**
@@ -14,8 +16,8 @@ public class SeriesRectangleView extends IRectangleView {
     private Serie serie;
     private TextView title;
 
-    public SeriesRectangleView(Context context, Serie serie) {
-        super(context);
+    public SeriesRectangleView(Context context, Callable<?> func, Serie serie) {
+        super(context, func);
         setSerie(serie);
         showSerie(serie);
     }

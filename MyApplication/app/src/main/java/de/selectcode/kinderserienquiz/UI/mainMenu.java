@@ -30,11 +30,9 @@ public class mainMenu extends Activity {
         SeriesRectangleView s = new SeriesRectangleView(this, new Serie("Film", true, "www.youtube.com"));
         ConstraintLayout l = (ConstraintLayout) findViewById(R.id.layout);
         l.addView(s);
-
-
-
-
     }
+
+
 
 
 }

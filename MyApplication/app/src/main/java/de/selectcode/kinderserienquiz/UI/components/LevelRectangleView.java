@@ -13,6 +13,8 @@ import android.view.View;
         import android.widget.ProgressBar;
         import android.widget.TextView;
 
+        import java.util.concurrent.Callable;
+
         import static android.view.ViewGroup.*;
 
 /**
@@ -20,8 +22,8 @@ import android.view.View;
  */
 public class LevelRectangleView extends IRectangleView {
 
-    public LevelRectangleView(Context context) {
-        super(context);
+    public LevelRectangleView(Context context, Callable<?> func) {
+        super(context, func);
     additionaleConstructor();
     }
 
