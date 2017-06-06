@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".UI.mainMenu"
+            android:name=".UI.levelMenu"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
 
             <intent-filter >

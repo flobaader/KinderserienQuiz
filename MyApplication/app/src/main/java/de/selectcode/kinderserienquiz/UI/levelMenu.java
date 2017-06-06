@@ -14,13 +14,21 @@ import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.List;
+
+import de.selectcode.kinderserienquiz.DataManagment.Level;
 import de.selectcode.kinderserienquiz.DataManagment.Serie;
 import de.selectcode.kinderserienquiz.R;
 import de.selectcode.kinderserienquiz.UI.components.SeriesRectangleView;
 
 import static android.app.PendingIntent.getActivity;
 
-public class mainMenu extends Activity {
+public class levelMenu extends Activity {
+
+    private List<Level> levelList;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
