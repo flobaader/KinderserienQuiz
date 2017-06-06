@@ -1,18 +1,8 @@
 package de.selectcode.kinderserienquiz.UI;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
-import android.support.v4.app.ServiceCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.MenuItem;
-import android.view.View;
 
 import java.util.List;
 
@@ -34,7 +24,7 @@ public class levelMenu extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_menu);
+        setContentView(R.layout.activity_level_menu);
 
         /*
         SeriesRectangleView s = new SeriesRectangleView(this, new Serie("Film", true, "www.youtube.com"));

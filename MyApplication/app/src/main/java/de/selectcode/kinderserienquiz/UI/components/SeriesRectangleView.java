@@ -30,16 +30,26 @@ public class SeriesRectangleView extends IRectangleView {
                 ViewGroup.LayoutParams.WRAP_CONTENT));
 
         if (serie.isSolved()){
-            title.setText("Is solved");
+            //Serie is already solved -> show title of the serie and a star
+            serieSolved();
         } else {
-            title.setText("Is not solved");
+            //Serie is not solved -> show question mark
+            serieNotSolved();
         }
 
         addView(title);
     }
 
-    //Getter and setter
+    private void serieSolved(){
+        title.setText(serie.getName());
+    }
 
+    private void serieNotSolved(){
+        title.setText("?");
+    }
+
+
+    //Getter and setter
     public Serie getSerie() {
         return serie;
     }
