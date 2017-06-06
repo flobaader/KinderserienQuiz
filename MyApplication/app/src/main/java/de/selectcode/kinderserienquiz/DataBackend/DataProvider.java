@@ -28,8 +28,11 @@ public class DataProvider {
 
         Level l = new Level("Level 1",seriesList, 0);
 
+        Level l2 = new Level("Level 2", seriesList, 0);
+
         List<Level> levelList = new ArrayList<Level>();
         levelList.add(l);
+        levelList.add(l2);
 
         return levelList;
     }

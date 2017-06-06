@@ -1,4 +1,4 @@
-package de.selectcode.kinderserienquiz.UI;
+package de.selectcode.kinderserienquiz.UI.activities;
 
 import android.app.Activity;
 import android.support.constraint.ConstraintLayout;

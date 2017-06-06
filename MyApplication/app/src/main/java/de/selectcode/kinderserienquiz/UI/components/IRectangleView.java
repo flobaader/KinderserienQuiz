@@ -8,6 +8,8 @@ import android.widget.LinearLayout;
 
 import java.util.concurrent.Callable;
 
+import de.selectcode.kinderserienquiz.R;
+
 /**
  * Created by floba on 06.06.2017.
  */
@@ -24,7 +26,7 @@ public abstract class IRectangleView extends LinearLayout{
         layoutParams.setMargins(10, 10, 10, 10);
         this.setMinimumHeight(100);
         this.setLayoutParams(layoutParams);
-        this.setBackgroundColor(Color.GRAY);
+        this.setBackgroundColor(Color.WHITE);
         this.setOrientation(VERTICAL);
         this.setClickable(true);
 

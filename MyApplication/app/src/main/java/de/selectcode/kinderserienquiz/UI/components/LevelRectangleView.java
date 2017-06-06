@@ -2,6 +2,8 @@ package de.selectcode.kinderserienquiz.UI.components;
 
         import android.content.Context;
         import android.graphics.Color;
+        import android.view.Gravity;
+        import android.view.View;
         import android.view.ViewGroup;
         import android.widget.ProgressBar;
         import android.widget.TextView;
@@ -20,24 +22,25 @@ public class LevelRectangleView extends IRectangleView {
         super(context);
         this.level = l;
 
-        this.setBackgroundColor(Color.GRAY);
-        this.setOrientation(VERTICAL);
+        LayoutParams layoutParams = new LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT);
+        layoutParams.setMargins(20,0,0,20);
+        layoutParams.gravity = Gravity.CENTER;
+
 
         //Title
         TextView t = new TextView(this.getContext());
-        t.setLayoutParams(new LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT));
         t.setText(getLevel().getName());
+        t.setLayoutParams(layoutParams);
+        t.setAllCaps(true);
         this.addView(t);
 
         //ProgressBar
         ProgressBar p = new ProgressBar(this.getContext(),
                 null,
                 android.R.attr.progressBarStyleHorizontal);
-        p.setLayoutParams(new LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT));
+        p.setLayoutParams(layoutParams);
         p.setIndeterminate(false);
         p.setProgress(getLevel().getSolvedSeriesAmount() / getLevel().getSeriesAmount());
         this.addView(p);
