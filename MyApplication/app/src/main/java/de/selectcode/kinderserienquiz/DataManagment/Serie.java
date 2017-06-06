@@ -9,6 +9,11 @@ public class Serie {
     private boolean solved;
     private String youtubeLink;
 
+    public Serie(String name, boolean solved, String youtubeLink){
+        setName(name);
+        setSolved(solved);
+        setYoutubeLink(youtubeLink);
+    }
 
     public String getName() {
         return name;
