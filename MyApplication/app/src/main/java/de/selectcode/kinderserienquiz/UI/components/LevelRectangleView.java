@@ -18,26 +18,15 @@ import android.view.View;
 /**
  * TODO: document your custom view class.
  */
-public class LevelRectangleView extends LinearLayout {
+public class LevelRectangleView extends IRectangleView {
 
     public LevelRectangleView(Context context) {
         super(context);
     additionaleConstructor();
     }
 
-
     public void onClick(View view){
         Log.d("Hallo", "Test");
-    }
-
-    public LevelRectangleView(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
-        additionaleConstructor();
-    }
-
-    public LevelRectangleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        additionaleConstructor();
     }
 
 
