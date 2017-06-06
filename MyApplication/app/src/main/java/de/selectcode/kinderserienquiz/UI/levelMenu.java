@@ -3,6 +3,8 @@ package de.selectcode.kinderserienquiz.UI;
 import android.app.Activity;
 import android.support.constraint.ConstraintLayout;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import java.util.List;
 
@@ -46,7 +48,7 @@ public class levelMenu extends Activity {
                 }
             });
 
-            ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.layout);
+            LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
             layout.addView(view);
         }
 
