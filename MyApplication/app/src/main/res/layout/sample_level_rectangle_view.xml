@@ -6,10 +6,5 @@
     android:width="100pt"
     android:height="100pt">
 
-    <LinearLayout>
-        <Label android:text="Jo was geht"/>
-
-    </LinearLayout>
-
 
 </de.selectcode.kinderserienquiz.UI.components.LevelRectangleView>
