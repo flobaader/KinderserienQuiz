@@ -16,7 +16,7 @@ public abstract class IRectangleView extends LinearLayout{
     Callable<?> function;
 
 
-    public IRectangleView(Context context, Callable<?> functionOnClick) {
+    public IRectangleView(Context context) {
         super(context);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -28,16 +28,5 @@ public abstract class IRectangleView extends LinearLayout{
         this.setOrientation(VERTICAL);
         this.setClickable(true);
 
-        this.function = functionOnClick;
-        this.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try{
-                    function.call();
-                }catch(Exception e){
-                    Log.d("ERROR", "Click on IRectangle failed");
-                }
-            }
-        });
     }
 }

@@ -22,8 +22,8 @@ import android.view.View;
  */
 public class LevelRectangleView extends IRectangleView {
 
-    public LevelRectangleView(Context context, Callable<?> func) {
-        super(context, func);
+    public LevelRectangleView(Context context) {
+        super(context);
     additionaleConstructor();
     }
 

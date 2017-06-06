@@ -16,8 +16,8 @@ public class SeriesRectangleView extends IRectangleView {
     private Serie serie;
     private TextView title;
 
-    public SeriesRectangleView(Context context, Callable<?> func, Serie serie) {
-        super(context, func);
+    public SeriesRectangleView(Context context, Serie serie) {
+        super(context);
         setSerie(serie);
         showSerie(serie);
     }
