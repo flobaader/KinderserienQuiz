@@ -35,6 +35,7 @@ public class Level {
 
     public int getStarLimit() {
         return starLimit;
+    }
 
     public void setStarLimit(int starLimit) {
         this.starLimit = starLimit;
