@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="de.selectcode.kinderserienquiz.mainMenu"
     tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/colorPrimary">
 
 </android.support.constraint.ConstraintLayout>
