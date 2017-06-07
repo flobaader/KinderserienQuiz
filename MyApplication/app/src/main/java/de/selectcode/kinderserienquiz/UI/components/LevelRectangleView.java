@@ -2,21 +2,18 @@ package de.selectcode.kinderserienquiz.UI.components;
 
         import android.content.Context;
         import android.graphics.Color;
+        import android.media.Image;
         import android.view.Gravity;
         import android.view.View;
         import android.view.ViewGroup;
+        import android.widget.LinearLayout;
         import android.widget.ProgressBar;
         import android.widget.TextView;
 
         import de.selectcode.kinderserienquiz.DataManagment.Level;
 
-/**
- * TODO: document your custom view class.
- */
 public class LevelRectangleView extends IRectangleView {
     private Level level;
-
-
 
     public LevelRectangleView(Context context, Level l) {
         super(context);
@@ -45,6 +42,23 @@ public class LevelRectangleView extends IRectangleView {
         p.setProgress((getLevel().getSolvedSeriesAmount() / getLevel().getSeriesAmount() * 100));
         this.addView(p);
 
+        //Linear Layout Stars
+
+        LinearLayout layoutStars = new LinearLayout(this.getContext());
+        layoutStars.setOrientation(HORIZONTAL);
+
+
+        //Status Text
+        TextView textViewStatus = new TextView(this.getContext());
+        textViewStatus.setLayoutParams(layoutParams);
+        String statusText = level.getSolvedSeriesAmount() + "/" + level.getSeriesAmount();
+        textViewStatus.setText(statusText);
+        layoutStars.addView(textViewStatus);
+
+        //Star image
+        //TODO: Integrate
+
+        this.addView(layoutStars);
     }
 
 

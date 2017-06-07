@@ -21,6 +21,7 @@ public abstract class IRectangleView extends LinearLayout{
 
     public IRectangleView(Context context) {
         super(context);
+
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
