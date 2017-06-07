@@ -34,7 +34,8 @@ public class mainMenu extends AppCompatActivity {
         button_start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(, levelMenu.class));
+                Intent nextScreen = new Intent(mainMenu.this, levelMenu.class);
+                startActivity(nextScreen);
             }
         });
 
