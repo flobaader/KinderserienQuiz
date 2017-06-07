@@ -11,20 +11,15 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".UI.activities.levelMenu"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
-
-
-
-        </activity>
-        <activity
-            android:name=".UI.activities.mainMenu">
-
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"></activity>
+        <activity android:name=".UI.activities.mainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".UI.activities.settingsView"></activity>
     </application>
 
 </manifest>

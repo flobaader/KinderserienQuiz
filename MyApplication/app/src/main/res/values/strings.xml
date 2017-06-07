@@ -2,5 +2,6 @@
     <string name="welcome">Willkommen</string>
     <string name="app_name">KinderserienQuiz</string>
     <string name="start">Start</string>
+    <string name="settings">Settings</string>
 
 </resources>

@@ -21,24 +21,15 @@ public class mainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-        LinearLayout layout = (LinearLayout) findViewById(R.id.layout);
+    }
 
-        TextView t = new TextView(this.getBaseContext());
-        t.setText(R.string.welcome);
-        layout.addView(t);
+    public void goToLevelMenu(View view){
+        Intent nextScreen = new Intent(mainMenu.this, levelMenu.class);
+        startActivity(nextScreen);
+    }
 
-        final Button button_start = new Button(this.getBaseContext());
-        button_start.setText(R.string.start);
-        layout.addView(button_start);
-
-        button_start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent nextScreen = new Intent(mainMenu.this, levelMenu.class);
-                startActivity(nextScreen);
-            }
-        });
-
-
+    public void goToSettings(View view){
+        Intent nextScreen = new Intent(mainMenu.this, settingsView.class);
+        startActivity(nextScreen);
     }
 }
