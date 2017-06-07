@@ -25,8 +25,8 @@ public class LevelRectangleView extends IRectangleView {
         LayoutParams layoutParams = new LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
-        layoutParams.setMargins(20,0,0,20);
-        layoutParams.gravity = Gravity.CENTER;
+        layoutParams.setMargins(100,40,100,40);
+        layoutParams.gravity = Gravity.CENTER_HORIZONTAL;
 
 
         //Title
@@ -42,7 +42,7 @@ public class LevelRectangleView extends IRectangleView {
                 android.R.attr.progressBarStyleHorizontal);
         p.setLayoutParams(layoutParams);
         p.setIndeterminate(false);
-        p.setProgress(getLevel().getSolvedSeriesAmount() / getLevel().getSeriesAmount());
+        p.setProgress((getLevel().getSolvedSeriesAmount() / getLevel().getSeriesAmount() * 100));
         this.addView(p);
 
     }

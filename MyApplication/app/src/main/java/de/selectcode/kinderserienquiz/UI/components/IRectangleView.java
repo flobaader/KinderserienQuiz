@@ -3,6 +3,7 @@ package de.selectcode.kinderserienquiz.UI.components;
 import android.content.Context;
 import android.graphics.Color;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -24,8 +25,10 @@ public abstract class IRectangleView extends LinearLayout{
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 
         layoutParams.setMargins(10, 10, 10, 10);
-        this.setMinimumHeight(100);
+        layoutParams.gravity = Gravity.CENTER_HORIZONTAL;
         this.setLayoutParams(layoutParams);
+        this.setMinimumHeight(100);
+        this.setPadding(10,10,10,10);
         this.setBackgroundColor(Color.WHITE);
         this.setOrientation(VERTICAL);
         this.setClickable(true);
